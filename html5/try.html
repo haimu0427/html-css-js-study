@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>zzn的模拟工作室</title>
+        <style>
+            body {
+                background-color: #717070;
+            }
+            h1 {
+                font-size: 16px;
+                text-align: center;
+                color: #6ce2a1;
+            }
+            p {
+                font-size: 14px;
+                text-align: center;
+                color: #ffffff;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>welcome to my workhome</h1>
+        <div style="text-align: center;color:white;font-size: 14px;" >发布者:zzn  有效答卷:666   剩余试卷 666</div>
+        <form id="questionaryfrom" method="post" action="https://www.wjx.cn">
+        <div id="questionaryDiv" class="questionaryDiv">
+            <div class="questionaryTitle">
+                <div class="questionaryTitlehead">
+                    <strong><span style="font-size: medium;">1. 基础信息</span></strong>
+                    <span class="type">[必填]</span>
+                </div>
+                <br />
+                <label id="upload-img">上传头像:<input type="file" accept="image/*" id="upFile" onchange="upShow(this)" /> </label>
+                <div id="showZone">
+                    <img id="showImg"/>
+                </div>
+                <!--方框的开始位置-->
+                <fieldset class="message">
+                    <legend>基础信息有哪些:</legend><br />
+                    <label for="name">姓名<input type="text"></label>
+                    <label for="id">银行卡密码<input type="password"></label>
+                    <label for="age">年龄<input type="text" ></label>
+                    <label for="sex">性别
+                        <select>
+                            <option value="男">男</option>
+                            <option value="女">女</option>
+                        </select>
+                    <label for="birthday">生日是几号<input type="date"></label> <br />
+                </fieldset>
+                <br />
+                <!--方框的结束位置-->
+                <fieldset class="message">
+                    <legend>个人爱好</legend>
+                    <label for="hobby">
+                        <input type="checkbox" name="hobby" value="唱歌">唱歌
+                        <input type="checkbox" name="hobby" value="跳舞">跳舞
+                        <input type="checkbox" name="hobby" value="rap">rap
+                        <input type="checkbox" name="hobby" value="打篮球">打篮球
+                        <input type="checkbox" name="hobby" value="打游戏">打游戏
+                        <input type="checkbox" name="hobby" value="看书">看书
+                        <input type="checkbox" name="hobby" value="旅游">旅游
+                    </label>
+                </fieldset>
+                <br />
+                <fieldset class="message">
+                    <legend>现在的学历是</legend>
+                    <div class="education">
+                        <div class="header">
+                            <div calss="title">
+                        </div>
+                        <label for="education">
+                        <select name="education" id="education">
+                        <option>小学</option>
+                        <option>初中</option>
+                        <option>高中</option>
+                        <option>大专</option>
+                        <option>本科</option>
+                        <option>硕士</option>
+                        <option>博士</option>
+                        </select>
+                        <div class="消费水平">
+                            <label for="consumption">
+                                <input type="radio" name="consumption">贫困
+                                <input type="radio" name="consumption">中产
+                                <input type="radio" name="consumption">富裕
+                                <input type="radio" name="consumption">土豪
+                            </label>
+                        </div>
+                        </label>
+                        </div></fieldset><br />
+                        <fieldset class="question">
+                        <legend>你对现在的生活满意吗？(你对现在的社会有什么看法)</legend>
+                        <div class="question">
+                            <div class="header">
+                                <div class="title">
+                                    
+                            </div>
+                        </div>
+                        <textarea name="question" id="question" cols="50" rows="10" placeholder="请在这里输入你的答案"></textarea>
+                        </label>
+                    </fieldset>
+                    <br />
+                    <fieldset class="message">
+                        <legend>对政府经济政策的看法</legend>
+                        <label for="suggestion">
+                            <input type="range" name="view" id="view" min="0" max="100" step="1" value="50" >
+                            
+                        </label>
+                        </fieldset>
+                    <br />
+                    <button type="submit" class="submit">提交</button>
+                    <button type="reset" class="reset">重置</button>
+
+    </body>
+</html>

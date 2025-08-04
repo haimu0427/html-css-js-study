@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :enabled {
+            outline: 2px solid green;
+        }
+        :disabled {
+            outline: 2px solid red;
+        }
+        :checked + span{
+            color: blue;
+        }
+        :required {
+            outline: 3px solid orange;
+        }
+        :optional { 
+            outline: 3px solid purple;
+        }
+        :default {
+            outline: 3px solid yellow;
+        }
+        input:in-range {
+            outline: 3px solid pink;
+        }
+        input:out-of-range {
+            outline: 3px solid brown;
+        }
+        input:read-only {
+            background-color:aliceblue;
+        }
+        input:read-write {
+            background-color: lightgreen;
+        } 
+    </style>
+</head>
+<body>
+    <button>able</button>
+    <button disabled>disabled</button>
+    <input type="checkbox" ><span>peter</span>
+    <input type="number" min="3" max="99" value="30" required readonly>
+</body>
+</html>

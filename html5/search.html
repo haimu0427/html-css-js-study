@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">  
+</head>
+<body>
+
+    <label>邮箱<input type="email" pattern="正则表达式" placeholder="输入网易邮箱哦" required></label><br />
+    <label>电话<input type="tel" placeholder="需要一个座机号码" required></label><br />
+    <label>网址<input type="url" placeholder="需要一个http和https的url" size="30" maxlength="33" required></label><br />
+    
+    <input type="text" id="date" name="date" list="datelist" required>
+        <datalist id="datelist">
+        <option value="2023-10-01">2023年10月1日</option>
+        <option value="2023-10-02">2023年10月2日</option>
+        <option value="2023-10-03">2023年10月3日</option>
+        </datalist>
+
+<label for="date">输入日期：</label>
+<input type="text" id="date" name="date" list="date-list">
+<datalist id="date-list">
+  <option value="2023-10-01">2023年10月1日</option>
+  <option value="2023-10-02">2023年10月2日</option>
+  <option value="2023-10-03">2023年10月3日</option>
+</datalist>
+
+    <from >
+    <label>你想选第五人格的哪个角色<input type="search" name="search"></label><br />
+    <select name="character" id="character" multiple>
+            <optgroup label="救人位">救人位</optgroup>
+            <option value="佣兵">佣兵</option>
+            <option value="记者">记者</option>
+            <optgroup label="修机位">修机位</optgroup>
+            <option value="机械师">机械师</option>
+            <option value="作曲家">作曲家</option>
+            <optgroup label="辅助位">辅助位</optgroup>
+            <option value="医生">医生</option>
+            <option value="园丁">园丁</option>
+            <option value="昆虫学家">昆虫学家</option>
+    </select>
+    <input type="hidden" name="MAX_FILE_SIZE" value="1024">
+    <lable>what'file do you want uplode<input type="file" name="file" accept="image/*" multiple></lable>
+    <br />
+        <label>亲爱的, 选一个颜色呗<input type="color" name="color"></label>
+        <label>图片就是位置<input type="image" src="windy.png"></label>
+        <input type="submit" value="提交" onclick="alert('已提交')">
+        <label>隐形的东西<input type="hidden" value="你看不到我吧" disabled></label>
+    </from>
+    <br />
+    <label>小女子年方二八, 正青春, 被师傅削去了头发<input type="number" name="age" min="1" max="120" step="1"></label>
+    <label>小女子年方二八, 正青春, 被师傅削去了头发<input type="range" name="age" min="1" value="1" max="120" step="1"></label>
+    <input type="submit" value="提交" required>
+    
+</body>

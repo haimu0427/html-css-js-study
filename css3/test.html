@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        
+        * {
+            padding: 10px;
+            background-color: #D1FEFF;
+        }
+        h2 {
+            text-align: center;
+        }
+        span {
+            padding: 0px;
+            border: 2px solid greenyellow
+        }
+        .slogn {
+            font-size: 20px;
+            color: red;
+            text-align: center;
+        }
+        #olive {
+            color: olive;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        span.content {
+            color: blue;
+            font-size: large;
+        }
+        p::first-line{
+            color: red;
+            font-weight: bold;  
+        }
+        a::before {
+            content:url("https://www.baidu.com/favicon.ico");
+        }
+        a::after {
+            content:"(点我干嘛？)";
+        }
+        ::selection{
+            background-color: yellow;
+            color: red;
+
+        }
+        a:link {
+            color: pink;
+        }
+        a:visited{
+            color: red;
+        }
+        a:hover {
+            color: black;
+        }
+        a:active {
+            color: green;
+        }
+        div {
+            background-color: pink
+        }
+        div:hover {
+            background-color: yellow;;
+        }
+        :activve{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsum recusandae ea id? Suscipit placeat fugiat harum architecto. Amet nesciunt quaerat temporibus dolor a velit hic voluptas eaque quo tempore.</p>
+    <p style="color:black;">i <span id="olive" style="border: 2px black dashed; padding: 5px;">love</span> you </p>
+    <a href="https://www.baidu.com" target="_blank">百度一下</a>
+    <div>来 点我</div>
+</body>
+
+</html>

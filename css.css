@@ -1,0 +1,165 @@
+   header {
+            /* 2. 顶部蓝色渐变 */
+            background: linear-gradient(to bottom, rgb(214, 244, 244) 0%,azure 100%);
+        }
+        header img {
+
+            display: block;
+            margin: 0 auto;
+        }
+        header nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: gray;
+        }
+
+        a:hover {
+            color: rgb(172, 172, 172);
+        }
+        .easy-tools {
+            text-align: center;
+            color: gray;
+            top: 10px;
+            right: 10px;
+            font-size: 14px;
+        }
+        .tools {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            padding: 20px;
+        }
+        
+        .tools a {
+            position: relative; /* 为绝对定位提供参考 */
+            display: block;
+            text-decoration: none;
+        }
+        
+        .tools button {
+            padding: 0;
+            border: none;
+            background: none; 
+            width: 100%;
+            height: auto;
+            position: relative; /* 为文字定位提供参考 */
+            cursor: pointer;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .tools img {
+            border-radius: 8px;
+            width: 100%;
+            height: 200px; /* 固定高度，便于定位 */
+            object-fit: cover;
+            display: block;
+        }
+        
+        .tools span.tool-text {
+            position: absolute;
+            bottom: 10%; /* 距离底部10% */
+            left: 50%;
+            transform: translateX(-100%);
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* 添加阴影增强可读性 */
+            background: rgba(0,0,0,0.5); /* 半透明背景 */
+            padding: 8px 16px;
+            border-radius: 20px;
+            white-space: nowrap;
+            pointer-events: none; /* 防止文字阻挡点击 */
+        }
+        
+        /* 悬停效果 */
+        .tools button:hover {
+            transform: scale(1.02);
+            transition: transform 0.3s ease;
+        }
+        
+        .tools button:hover .tool-text {
+            background: rgba(0,0,0,0.7);
+            transition: background 0.3s ease;
+        }
+
+
+        .image-gallery {
+            columns: 5 200px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 16px;
+        }
+        .image-gallery button {
+            padding:0;
+            border:none;
+            background:none; 
+            width:100%;
+            height:100%;
+            position: realtive;
+        }
+        .image-gallery img {
+            border-radius: 8px;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            height:100%; 
+            object-fit:cover;
+            display:block;
+        }
+        .image-gallery button:hover {
+            transform: scale(1.02);
+            transition: transform 0.3s ease;
+        }
+        .image-gallery button::after {
+            content: attr(data-text); /* 使用 data-text 属性的值 */
+            position: absolute;
+            bottom: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: bold;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+        
+        .image-gallery button:hover::after {
+            opacity: 1;
+            visibility: visible;
+            bottom: 12px; /* 向上移动一点 */
+        }
+
+
+        #title-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 35px;
+        }
+        #search-button {
+            background-color: rgb(87, 87, 235);
+            color: white;
+        }
+
+
+        footer {
+            position: fixed;
+            height: auto;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #a19e9e;
+        }
+        footer .footer-content {
+            font-size: 8px;
+        }

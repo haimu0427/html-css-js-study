@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript的练习文稿</title>
+    <script type="text/javascript" src="patch.js" defer></script>
+    <style type="text/css">
+        .bold{
+            font-weight: bold;
+        }
+        .italic{
+            font-style: italic;
+        }
+        span{
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+    <!--defer属性只能用于外部脚本本见-->
+</head>
+<body>
+    <!--灵魂三问-->
+    <p class="bold">上面的内容那来的啊</p>
+    <p>who i dam<span> func you </span></p>
+    <p>where <del> sfsdfsafsdfsddafadfgwo shi </del>i from</p>
+    <P>where<ins>sdf sd fasldkfjlskadfiwfksadjfkwo hidsf</ins> i go </P>
+    <pre>
+        <code>
+            <span>这是一段代码</span>
+            <span>var x = document.getElementsByTagName("p");</span>
+        </code>
+    <p class="bold">上面的代码定义了一个标量, <var>usrinput</var>用来接受用户输入的内容</p>
+    <p class="italic">如果用户输入的是<kbd>香蕉</kbd>, 那么就会打印<samp>吧唧吧唧, 我喜欢的</samp></p>
+    <q>nihao 天然的引用就是好用, 更多的也是为了语义话</q><br />
+    <q>孔子云: <s>学而不思则罔,</s>思而不学则殆</q>
+    <blockquote cite="https://www.example.com">
+        <cite>这里可以用来打标题, 这是我没有想到的</cite>
+        <p>这是一段引用的内容</p>
+        <p>引用的内容可以是任何东西, 甚至是代码</p>
+        <p>语义和呈现分离</p>
+            <code>
+                <span>console.log("这是一个引用的代码")</span>
+            </code>
+        </pre>
+    </blockquote>
+    
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>me</li>
+    </ul>
+    <ol type="A" start="3" reversed>
+        <li>me</li>
+        <li>xiaohong</li>
+        <li>xiaoming</li>
+    </ol>
+
+    <p><abbr title="高中地理常考题目">盒马先生</abbr> 哎呦不错哦</p>
+    <P><dfn>HTML</dfn>是一门超文本标记语言</P>
+    <p><mark>可乐<sup>2</sup></mark> <mark>雪碧<small>jiba</small></mark> <mark>柠檬茶</mark>, 请问客官喝点啥</p>
+    <ruby>
+        <rb>魑</rb><rp>(</rp><rt>chi</rt><rp>)</rp>
+        <rb>魅</rb><rp>(</rp><rt>mei</rt><rp>)</rp>
+        <rb>魍</rb><rp>(</rp><rt>wang</rt><rp>)</rp>
+        <rb>魉</rb><rp>(</rp><rt>liang</rt><rp>)</rp>
+    </ruby>
+    <ruby>
+        <rb>魑魅魍魉</rb>
+        <rp>(</rp>
+        <rt>chi mei wang liang</rt>
+        <rp>)</rp>
+    </ruby>
+    <p><bdo dir="rtl">有点区别, 但是好像不多</bdo></p>
+    <bdo dir="ltr">有点区别, <i>但是好像不<i></i>多<b>年代了</b></bdo>
+    <br /><address> 
+        <strong>联系我:</strong>
+            1813245@qq.com
+    </address> 
+
+    <noscript>
+        <p>都什么<b>年代了</b>, 还不支持JavaScript</p>
+    </noscript>
+</body>
